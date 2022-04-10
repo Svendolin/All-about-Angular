@@ -1,0 +1,10 @@
+Angular = Javascript Framework (Gerüst aus wiederholenden Funktionen)
+- Liefern Komponenten, um sich effektiv mit dem Server zu verbinden oder steigern die Kompabilität
+- Skripte bereits vorhanden
+- Vereinfachungen für den Programmierprozess
+- Weitere Javascript Frameworks sind React sowie View
+- Bietet eine Vielzahl an Libraries (Codebibliotheken) -> Material Design für grafische Komponenten
+- Von Google gebaut, somit Unterstützung garantiert, wird selber angewendet und weiterentwickelt
+
+Installation: 
+- Node.js muss installiert sein (Laufzeitumgebung für Javascript =Scripte werden über unseren Computer direkt aufgeführt und nicht nur über den Webbrowser)
