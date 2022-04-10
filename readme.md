@@ -36,18 +36,11 @@ Direct Link to the place where I'm studying are you going to find [HERE](https:/
 
 
 
-Node.js - INSTALLATION:
+**Node.js - INSTALLATION:** *(Used for runtime environment for Javascript, script performs directly on the computer and not just on a web browser)*
 * https://nodejs.org/en/ (Recommend LTS for an unbuggy / non-risky experience)
 <br />
 
-Express.js - INSTALLATION:
-* https://expressjs.com/ (Home is where to start, --save is not urgently needed in your Terminal)
-<br />
 
-REQUEST (TO FETCH API SERVERSIDE) - INSTALLATION:
-* https://www.npmjs.com/package/request (deprecated! - Not to 100% safe anymore)
-* Alternate is AXIOS: https://axios-http.com/
-<br />
 
 NODEMON - INSTALLATION:
 * https://www.npmjs.com/package/nodemon 
@@ -61,11 +54,15 @@ NODEMON - INSTALLATION:
 
 ## &nbsp;Angular - Useful Assistance ✅
 ***
-``Angular`` = A
+``Angular`` = Javascript Framework
 
-_**LOREM IPSUM:**_
+_**WHY SHALL I USE ANGULAR?**_
 
-* Lorem
+- Provides components to effectively connect to the server or increase compatibility
+- Scripts are already available (safe time) and here to simplify the programming process
+- Other well-known Javascript frameworks are React and View
+- Provides a variety of libraries (code libraries) -> **Material Design** for graphical components
+- Built and used by Google = support is guaranteed
 
 
 
