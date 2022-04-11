@@ -37,7 +37,18 @@ Direct Link to the place where I'm studying are you going to find [HERE](https:/
 
 
 **Node.js - INSTALLATION:** *(Used for runtime environment for Javascript, script performs directly on the computer and not just on a web browser)*
-* https://nodejs.org/en/ (Recommend LTS for an unbuggy / non-risky experience)
+* https://nodejs.org/en/ (Recommend LTS = Long Term Support for an unbuggy / non-risky experience)
+* Open BASH or CMD to check with node --version if you installed it correctly
+* Node works via the command lines and is not executed via graphical components.
+* Together with NODE we also get the tool "Node Package Manager" = software can be installed via the command line!
+<br />
+
+**Angular - INSTALLATION:** *(Our CLI: Command Line Interface)*
+* https://angular.io/cli (npm install -g @angular/clie)
+<br />
+
+**VSC and CHROME** *(Code Editor and Webbrowser)*
+* Chrome is recomended because of the close origin of Angular by Google
 <br />
 
 
@@ -49,12 +60,18 @@ NODEMON - INSTALLATION:
 <br />
 
 ***
-<img align="left" alt="JavaScript" width="35px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/angular/angular.png" /> 
+<img align="left" alt="Angular" width="35px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/angular/angular.png" /> 
+
+<img align="left" alt="Typescript" width="35px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png" /> 
 
 
-## &nbsp;Angular - Useful Assistance ✅
+## &nbsp;Angular / Typescript - Useful Assistance ✅
 ***
 ``Angular`` = Javascript Framework
+
+``Typescript`` = Javascript Extension (Superset)
+
+<br />
 
 _**WHY SHALL I USE ANGULAR?**_
 
@@ -73,6 +90,11 @@ _**WHY SHALL I USE ANGULAR?**_
 </script>
 ```
 
+_**WHY DO WE USE TYPESCRIPT?**_
+
+- This programming language is almost the same like Javascript, but it is an EXTENSION with some advantages
+- Everything which can be written in Javascript is also possible with Typescript
+
 <br />
 <br />
 
@@ -86,8 +108,13 @@ _**WHY SHALL I USE ANGULAR?**_
 |:--------------| :--------------|
 | $ node --version | Checks the node.js version (None if you havent installed it) |
 | $ npm --version | Checks the NPM Version (Node Package Manager) |
+|$ npm install -g @angular/clie|Command to Install Angular (Installed Node before)|
+|$ npm install -g typescript| Command to Install Typescript|
+|tsc script.ts|Compile my Typescript File script.ts to Javascript (only JS is readable for a browser)|
+|OLD|OLD|
 | $ pwd | Print Work Directory (checks your path) |
 | $ ls | Show Contents of a Directory |
+|Trick17 to open correct path (No $cd used)| Right click of your desired file in your explorer > "OPEN IN INTEGRATED TERMINAL"|
 | $ cd /TAB (TAB as Autocomplete) | Navigate through Content Directory |
 | $ cd ../ | A step back of the Content Directory |
 | $ npm init | Optional AT THE BEGINNING: Setting up the nodemodule with additional information |

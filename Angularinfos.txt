@@ -8,3 +8,6 @@ Angular = Javascript Framework (Gerüst aus wiederholenden Funktionen)
 
 Installation: 
 - Node.js muss installiert sein (Laufzeitumgebung für Javascript =Scripte werden über unseren Computer direkt aufgeführt und nicht nur über den Webbrowser)
+- Angular CLI (Command Line Interface)
+- Entwicklungsumgebung (Code-Editor)
+- Webbrowser (Chrome)
