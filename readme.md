@@ -12,6 +12,19 @@ This "All about Angular"-repository catches up its focus on all the Projects and
         
 Direct Link to the place where I'm studying are you going to find [HERE](https://www.sae.edu/che/de?utm_source=PS01&gclid=Cj0KCQjw-4SLBhCVARIsACrhWLVIaD_aUt7y4brT7tqMW9o7tskgb1vjQqJFkzQwkwdN_40_Ls7MgAEaAtXxEALw_wcB)
 
+* Kevin Kreuzer on YT https://www.youtube.com/channel/UCFT4YVZl7AFia7rZBTEvavw/videos
+
+* Angular Blog (Tomas) https://tomastrajan.medium.com/
+
+* Angular Talks: https://tomastrajan.com/speaking/conferences
+
+* EXERCISES ( GitHub repo, please clone): https://github.com/tomastrajan/angular-mastery-workshop 
+
+
+
+
+
+
 
 
 <br />
@@ -34,7 +47,6 @@ Direct Link to the place where I'm studying are you going to find [HERE](https:/
 ***
 ## Technologies and Installation ✅
 ***
-
 
 
 **Node.js - INSTALLATION:** *(Used for runtime environment for Javascript, script performs directly on the computer and not just on a web browser)*
@@ -127,7 +139,7 @@ _**What's the MEANING OF THE FOLDERS in ANGULAR?**_
 |:--------------| :--------------|
 | $ node --version | Checks the node.js version (None if you havent installed it) |
 | $ npm --version | Checks the NPM Version (Node Package Manager) |
-|$ npm install -g @angular/clie|Command to Install Angular (Installed Node before)|
+|$ npm install -g @angular/cli|Command to Install Angular (Installed Node before)|
 |$ npm install -g typescript| Command to Install Typescript|
 |tsc script.ts|Compiles the Typescript File script.ts to Javascript in script.js (only JS is readable for a browser)|
   |$ ng new my-first-project|1) Use Trick 17 to be in the right path > 2) Initialize Angular to the project with the name "my-first-project" > 3) y to accept routing for multiple subpages > 4) Choose Design language (like SCSS) > Installing small libraries (packages) > 5) Puts in all the packages to your "my-first-project"-folder (Component Architecture)  |
