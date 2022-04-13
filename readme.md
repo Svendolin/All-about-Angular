@@ -24,7 +24,8 @@ Direct Link to the place where I'm studying are you going to find [HERE](https:/
 
 | Topic | Content  | 
 |:--------------| :--------------|
-| Week&nbsp;01 |  1...2...3 |
+| 01_Typescript |  Basic Usage of Typescript |
+| 02_Angularproject |  My very first angular project |
 
 
 <br />
@@ -94,9 +95,27 @@ _**WHY DO WE USE TYPESCRIPT?**_
 
 - This programming language is almost the same like Javascript, but it is an EXTENSION with some advantages
 - Everything which can be written in Javascript is also possible with Typescript
+- Old web browsers may not be able to read the constantly updated Javascript codes. Typescript remains at a rustic level, but at the same time we also write modernised Javascript
 
 <br />
 <br />
+
+_**What's the MEANING OF THE FOLDERS in ANGULAR?**_
+
+* _node_modules_ = Libraries used for our Angular Project
+* _src_ = Source for all the code we're typing over there
+  * _app_ = Components for the page
+  * _assets_ = Safe images, videos and sounds
+  * _environment_ = API keys, infos to our webapp like server URL changes
+  * _index.html_ = Starting the process
+  * _main.ts_ = Configurations
+* _.browserlistrc_ = Webbrowser Output Support
+* _.editorcofig_ = Configuration of our Code Editor VSC
+* _.gitignore_ = All the data which isnt shown in .git
+* _angular.json_ = Angular Configuration
+* _karma.conf.js_ = Testrunner (To test our Webapp)
+
+(**IMPORTANT: src is the most used folder here, in general you keep the others unattached**)
 
 
 
@@ -110,7 +129,11 @@ _**WHY DO WE USE TYPESCRIPT?**_
 | $ npm --version | Checks the NPM Version (Node Package Manager) |
 |$ npm install -g @angular/clie|Command to Install Angular (Installed Node before)|
 |$ npm install -g typescript| Command to Install Typescript|
-|tsc script.ts|Compile my Typescript File script.ts to Javascript (only JS is readable for a browser)|
+|tsc script.ts|Compiles the Typescript File script.ts to Javascript in script.js (only JS is readable for a browser)|
+  |$ ng new my-first-project|1) Use Trick 17 to be in the right path > 2) Initialize Angular to the project with the name "my-first-project" > 3) y to accept routing for multiple subpages > 4) Choose Design language (like SCSS) > Installing small libraries (packages) > 5) Puts in all the packages to your "my-first-project"-folder (Component Architecture)  |
+|||
+|||
+|||
 |OLD|OLD|
 | $ pwd | Print Work Directory (checks your path) |
 | $ ls | Show Contents of a Directory |
