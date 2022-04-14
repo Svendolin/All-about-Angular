@@ -93,9 +93,22 @@ _**WHY SHALL I USE ANGULAR?**_
 
 
 ```js
-/* ---- Lorem Ipsum ---- */
+/* ---- ALWAYS USE CONST and LET to guarantee to work with BLOCK-SCOPE ---- */
 
 <script>
+function foo() {
+  if(true)  {// FUNCTION SCOPE - START | BLOCK SCOPE - START
+    var heroOne = 'Iron Man'; // Functionscope
+    let heroTwo = 'Superman'; // Blockscope (console.log is in the wrong scope)
+    const herThree = 'Batman';// Blockscope (console.log is in the wrong scope)
+  }                           // BLOCK SCOPE - END
+  console.log(heroOne); // 'Iron Man'
+  console.log(heroTwo); // 'heroTwo is not defined'
+  console.log(heroThree); // 'heroThree is not defined'
+
+}// FUNCTION SCOPE - END
+
+foo();
 </script>
 ```
 
