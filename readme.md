@@ -22,6 +22,13 @@ This "All about Angular"-repository catches up its focus on all the Projects and
 
 * Presentation: https://drive.google.com/file/d/12sQ0uXbHAKkHme4WY_dY3vY6y9888t66/view?usp=sharing
 
+* Whats new in ES6 compared to ES2015:
+  * Arrow Functions =>
+  * Classes for an easier inheritance
+  * Template Strings ``
+  * Introducing block scope variables like let and const
+  * iteration with forEach() compared to for()-loops
+  * Asynchronal Functions
 
 <br />
 <br />
