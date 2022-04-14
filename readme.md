@@ -10,21 +10,17 @@
 
 This "All about Angular"-repository catches up its focus on all the Projects and Excercises I've made with Angular through the years as a **SAE-Web Development** student with exercise lessons every week as well as tutorial videos on _Youtube_.
         
-Direct Link to the place where I'm studying are you going to find [HERE](https://www.sae.edu/che/de?utm_source=PS01&gclid=Cj0KCQjw-4SLBhCVARIsACrhWLVIaD_aUt7y4brT7tqMW9o7tskgb1vjQqJFkzQwkwdN_40_Ls7MgAEaAtXxEALw_wcB)
+* Direct Link to the place where I'm studying are you going to find [HERE](https://www.sae.edu/che/de?utm_source=PS01&gclid=Cj0KCQjw-4SLBhCVARIsACrhWLVIaD_aUt7y4brT7tqMW9o7tskgb1vjQqJFkzQwkwdN_40_Ls7MgAEaAtXxEALw_wcB)
 
-* Kevin Kreuzer on YT https://www.youtube.com/channel/UCFT4YVZl7AFia7rZBTEvavw/videos
+* Kevin Kreuzer, one of the Angular experts beside Tomas Trajan on [YOUTUBE](https://www.youtube.com/channel/UCFT4YVZl7AFia7rZBTEvavw/videosB)
 
-* Angular Blog (Tomas) https://tomastrajan.medium.com/
+* ANGULAR BLOG from Tomas are you going to find [HERE](https://tomastrajan.medium.com/)
 
-* Angular Talks: https://tomastrajan.com/speaking/conferences
+* ANGULAR TALKS from Tomas are you going to find [HERE](https://tomastrajan.com/speaking/conferences)
 
-* EXERCISES ( GitHub repo, please clone): https://github.com/tomastrajan/angular-mastery-workshop 
+* ANGULAR EXERCISES from Tomas are you going to find [HERE](https://github.com/tomastrajan/angular-mastery-workshop)
 
-
-
-
-
-
+* Presentation: https://drive.google.com/file/d/12sQ0uXbHAKkHme4WY_dY3vY6y9888t66/view?usp=sharing
 
 
 <br />
@@ -80,9 +76,9 @@ NODEMON - INSTALLATION:
 
 ## &nbsp;Angular / Typescript - Useful Assistance ✅
 ***
-``Angular`` = Javascript Framework
+``Angular`` = Javascript Framework ("vorprogrammiertes Programmiergerüst / Rahmenstruktur")
 
-``Typescript`` = Javascript Extension (Superset)
+``Typescript`` = Javascript Extension "Erweiterung" (Superset)
 
 <br />
 
@@ -116,7 +112,7 @@ _**What's the MEANING OF THE FOLDERS in ANGULAR?**_
 
 * _node_modules_ = Libraries used for our Angular Project
 * _src_ = Source for all the code we're typing over there
-  * _app_ = Components for the page
+  * _app_ = Components for the page (With Import and Export we generate dependencies and add only the content we need)
   * _assets_ = Safe images, videos and sounds
   * _environment_ = API keys, infos to our webapp like server URL changes
   * _index.html_ = Starting the process
@@ -132,7 +128,7 @@ _**What's the MEANING OF THE FOLDERS in ANGULAR?**_
 
 
 ***
-## &nbsp;TERMINAL COMMANDS I USED HERE ✅
+## &nbsp;TERMINAL COMMANDS I USED HERE (IN THAT ORDER, MOSTLY) ✅
 ***
 
 | COMMAND | EFFECT  | 
@@ -141,7 +137,7 @@ _**What's the MEANING OF THE FOLDERS in ANGULAR?**_
 | $ npm --version | Checks the NPM Version (Node Package Manager) |
 |$ npm install -g @angular/cli|Command to Install Angular (Installed Node before)|
 |$ npm install -g typescript| Command to Install Typescript|
-|tsc script.ts|Compiles the Typescript File script.ts to Javascript in script.js (only JS is readable for a browser)|
+|tsc script.ts|TSC = Typescriptcompilation = Compiles the Typescript File script.ts to Javascript in script.js (only JS is readable for a browser)|
   |$ ng new my-first-project|1) Use Trick 17 to be in the right path > 2) Initialize Angular to the project with the name "my-first-project" > 3) y to accept routing for multiple subpages > 4) Choose Design language (like SCSS) > Installing small libraries (packages) > 5) Puts in all the packages to your "my-first-project"-folder (Component Architecture)  |
 |||
 |||
