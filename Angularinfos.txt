@@ -11,3 +11,81 @@ Installation:
 - Angular CLI (Command Line Interface)
 - Entwicklungsumgebung (Code-Editor)
 - Webbrowser (Chrome)
+
+Imporant stuff from Tomas:
+
+
+includes() = befindet sich das im Objekt drin? (s58)
+... = beide Elemente zusammen anzeigen (seite59)
+Arrays einfacher gestalten. (s60)
+Emojis auch möglich (s61)
+Wir können baseHero in robin einbinden (s65)
+
+MPA vs SPA (Google) - How much happens on the server and how much happens on the client's broswser
+
+PHP is a MPA - Requset (Multi) Page Application => Requrst to server, send afterwards the static page back to client
+(Request to backend, database sends the static thing back and the browser shows you the refreshed stuff)
+You always have the whole thing to render backend (Always have to rebuild the whole page)
+Viel Passiet im Serer, und nur das HTML wird zurückgeschickt
+
+Angular, React, is SPA - single page Application => The only thing which have to load are the objects you need directly in your Application
+just the HTML will be changed / rendered of the specific part (Gebäude steht schon, was geladen werden muss sind die Möbelstücke des Zimmers)
+Wechlse ich in ein anderes Zimmer, ist die Infrastruktur ebenfalls da.
+Wenig passiert auf dem Server, da nur das nötigste nur direkt auf dem Browser des Clients gezeigt wird
+
+WICHTIG:
+- $ cd 02 (KEIN / schreiben!)
+
+Vorgehen zum Erstellen / Einrichten:
+0) npm muss installiert sein / node muss installiert sein
+0.1) $ ng update @angular/cli = Update Angular etc falls alt
+0.2) $ ng --version
+0.3)  $ ng generate / serve and and and TESTEN falls nötig
+
+- Angular Material.io = Mit Components: Wie Bootstrap aber Angular spezifisch. (ABer behavoiur and design, combination of Template, style and logic)
+- Bootstrap ist nur Statisch
+
+1)  $ ng new (NAME) = Erstellen (dadurch wird der ganze Teil unten )
+1.1)  $ ng new (NAME) --create-application false --style scss -- --routing = (Version, wo man alles nachher selber einstellen muss)
+2)  $ ng g application customer-admin-map --style scss --routing = Applikationen aufbauen (packages) mit dem Namen "customer admin map"
+3)  $ ng serve -o = Änderungen prüfen (Sagt "Ready to use") Port localhost http://localhost:4200 ist bereit, ansonsten anderen Port nehmen (falls er meint, 4200 ist schon in Benutzung) z.B: http://localhost:56781/
+4 ) $ npm start = NPM starten und http://localhost:4200  auf Browser manuell öffnen
+SRC FILE fehlt?
+4.1) ctrl + C = NPM stop
+4.2) $ npm run start:prod (Simple Server für Test, aber nicht empfohlen. Geht nur wenn: "start:prod": "ng serve --open --configuration production" in package.json
+4.3) In Package.json die files können jeweils so angesprochen werden: "$ npm run watch" = Bringt "run" aus scripts zum laufen
+
+"scripts": {
+    "ng": "ng",
+    "start": "ng serve --open --port 4200",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test",
+    "start:prod": "ng serve --open --configuration production",
+    "build:dev": "--configuration development"
+
+5)  $ ng build = Appliction aufbauen (Zeigt den Aufbau)
+6) $ ng test = Verhalten testen 
+
+7) $ npm i -D karma-spec-reporter = Installiert dieses Package karma-spec-reporter ins package.json
+Dazwischen adden wir stuff wie im Beschrieb
+
+8) $ ng lint = Best Practises testen (Beim ersten Mal wird 2x YY gefragt, um weiter zu kommen)
+
+9) $ npm i -D webpack-bundle-analyzer und $ npm i -D source-map-explorer
+9.1) "analyze": "ng build --stats-json --output-hashing && webpack-bundle-analyzer ./dist/customer-admin-app/stats.json" = Neu ins package.json
+9.2) $ npm run wie 4.3) aber natürlich den Namen von 9.1 erwähnen = $ npm run analyze
+
+10 from Todo 9) Öffnen Sie die Datei angular.json im Stammverzeichnis des Arbeitsbereichs, die den Hauptdeskriptor und die Konfiguration des gesamten Arbeitsbereichs enthält.
+		ein einzelner Arbeitsbereich kann mehrere Anwendungen und Bibliotheken beherbergen und das defaultProject weist CLI an, den gegebenen Befehl standardmäßig gegen dieses Projekt auszuführen
+
+11) Angular.json hat auch Budgets > build (Warner, um dich aufmersam zu machen, dass z.bJavascript zu gross ist:
+
+"maximumWarning": "150kb",
+                  "maximumError": "180kb"  statt default werte: 
+
+"maximumWarning": "500kb",
+                  "maximumError": "1mb" 
+
+12) Autoformatter installieren = $ npm i -D prettier = So wird ALT + SHIFT + F auch funktionieren
+13) format:test und format:write in package.json und am Ende wie wieder 4.3) laufenlassen mit $ npm run(NAME)

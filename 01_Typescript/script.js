@@ -11,7 +11,7 @@ var anotherhero = 'Iron Man';
 //   if(true)  {                 // FUNCTION SCOPE - START | BLOCK SCOPE - START
 //     var heroOne = 'Iron Man'; // Functionscope
 //     let heroTwo = 'Superman'; // Blockscope (console.log is in the wrong scope)
-//     const herThree = 'Batman';// Blockscope (console.log is in the wrong scope)
+//     const heroThree = 'Batman';// Blockscope (console.log is in the wrong scope)
 //   }                           // BLOCK SCOPE - END
 //   console.log(heroOne); // 'Iron Man'
 //   console.log(heroTwo); // 'heroTwo is not defined'
@@ -57,7 +57,7 @@ for (var i = 0; i < numbersarray1.length; i++) {
 var numbersarray2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 numbersarray2.forEach(function (value) { return console.log(value); }); // 1,2,3,4,5,6,7,8,9,10
 
-// new: INSTEAD OF FOREACH-methods you can also use other methods like MAP() or REDUCE() or FILTER()
+// new: INSTEAD OF FOREACH-methods you can also use other methods like MAP() or REDUCE() or FILTER() or INCLUDES()
 var numbersarray3 = [1, 2, 3, 4, 5, 6];
 var result = numbersarray3.map(function (value) { return value * 5; });
 console.log(result); // We have to call the name of the variable "result" and not "value" because there is no scope {}
@@ -75,22 +75,28 @@ var sum2 = function (a, b) { return a + b; };
 A) Remove function, put it into a variable
 B) = Parameters
 C) Return the stuff after the arrow => without typing "return"
-
 */
-/* Example 2) */
+
+/* -- Example 2) -- */
 // old
 function randomNumber() {
     return Math.random;
 }
 // new
 var randomNumber2 = function () { return Math.random; };
-/* Example 3) */
+/* -- Example 3) -- */
 // old
 document.addEventListener('click', function () {
     console.log('click');
 });
 // new
 document.addEventListener('click', function () { return console.log('click'); });
-/*
- A) function(){} actually gets replaced by ,() =>
-*/
+// A) function(){} actually gets replaced by ,() =>
+
+/* 4) ---- async functions are always more fun to read and work with than with .then */
+async function loadUserAndAllUserOrders() {
+    const user = await userService.loadUser();
+    const orders = await orderService.loadOrdersForUser(user.id);
+    return orders;
+}
+

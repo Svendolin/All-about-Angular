@@ -107,7 +107,7 @@ function foo() {
   if(true)  {// FUNCTION SCOPE - START | BLOCK SCOPE - START
     var heroOne = 'Iron Man'; // Functionscope
     let heroTwo = 'Superman'; // Blockscope (console.log is in the wrong scope)
-    const herThree = 'Batman';// Blockscope (console.log is in the wrong scope)
+    const heroThree = 'Batman';// Blockscope (console.log is in the wrong scope)
   }                           // BLOCK SCOPE - END
   console.log(heroOne); // 'Iron Man'
   console.log(heroTwo); // 'heroTwo is not defined'
@@ -136,7 +136,7 @@ _**What's the MEANING OF THE FOLDERS in ANGULAR?**_
   * _assets_ = Safe images, videos and sounds
   * _environment_ = API keys, infos to our webapp like server URL changes
   * _index.html_ = Starting the process
-  * _main.ts_ = Configurations
+  * _main.ts_ = Configurations (Imports the first module)
 * _.browserlistrc_ = Webbrowser Output Support
 * _.editorcofig_ = Configuration of our Code Editor VSC
 * _.gitignore_ = All the data which isnt shown in .git
