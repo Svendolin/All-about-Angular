@@ -22,14 +22,6 @@ This "All about Angular"-repository catches up its focus on all the Projects and
 
 * Presentation: https://drive.google.com/file/d/12sQ0uXbHAKkHme4WY_dY3vY6y9888t66/view?usp=sharing
 
-* Whats new in ES6 compared to ES2015:
-  * Arrow Functions =>
-  * Classes for an easier inheritance
-  * Template Strings ``
-  * Introducing block scope variables like let and const
-  * iteration with forEach() compared to for()-loops
-  * Asynchronal Functions
-
 <br />
 <br />
 
@@ -54,7 +46,7 @@ This "All about Angular"-repository catches up its focus on all the Projects and
 
 **Node.js - INSTALLATION:** *(Used for runtime environment for Javascript, script performs directly on the computer and not just on a web browser)*
 * https://nodejs.org/en/ (Recommend LTS = Long Term Support for an unbuggy / non-risky experience)
-* Open BASH or CMD to check with node --version if you installed it correctly
+* Open BASH or CMD or POWERSHELL to check with node --version if you installed it correctly
 * Node works via the command lines and is not executed via graphical components.
 * Together with NODE we also get the tool "Node Package Manager" = software can be installed via the command line!
 <br />
@@ -148,36 +140,43 @@ _**What's the MEANING OF THE FOLDERS in ANGULAR?**_
 
 
 ***
-## &nbsp;TERMINAL COMMANDS I USED HERE (IN THAT ORDER, MOSTLY) ✅
+## &nbsp;TERMINAL COMMANDS I USED HERE (FOR PRE-DEFINED WORKSPACE) ✅
 ***
 
 | COMMAND | EFFECT  | 
 |:--------------| :--------------|
 | $ node --version | Checks the node.js version (None if you havent installed it) |
 | $ npm --version | Checks the NPM Version (Node Package Manager) |
-|$ npm install -g @angular/cli|Command to Install Angular (Installed Node before)|
+|$ npm install -g @angular/cli|Command to Install Angular CLI (Command Line Interface)|
 |$ npm install -g typescript| Command to Install Typescript|
 |tsc script.ts|TSC = Typescriptcompilation = Compiles the Typescript File script.ts to Javascript in script.js (only JS is readable for a browser)|
-  |$ ng new my-first-project|1) Use Trick 17 to be in the right path > 2) Initialize Angular to the project with the name "my-first-project" > 3) y to accept routing for multiple subpages > 4) Choose Design language (like SCSS) > Installing small libraries (packages) > 5) Puts in all the packages to your "my-first-project"-folder (Component Architecture)  |
-|||
-|||
-|||
-|OLD|OLD|
-| $ pwd | Print Work Directory (checks your path) |
-| $ ls | Show Contents of a Directory |
-|Trick17 to open correct path (No $cd used)| Right click of your desired file in your explorer > "OPEN IN INTEGRATED TERMINAL"|
-| $ cd /TAB (TAB as Autocomplete) | Navigate through Content Directory |
-| $ cd ../ | A step back of the Content Directory |
-| $ npm init | Optional AT THE BEGINNING: Setting up the nodemodule with additional information |
-| $ node (...) | Using NODE to start the serverside workingspace |
-| $ nodemon (...)  | Using NODEMON to start the serverside workingspace |
-| $ npm install -g nodemon  | Install Nodemon (This is the version to Install it once globally) |
-| $ npm i express  | Install Express (You can also write "install", "i" is shortcut) |
-| $ npm i ejs  | Install EJS (You can also write "install", "i" is shortcut) |
-| $ npm i ndeb  | Install NEDB, a lightweight Javascript Database |
-| $ npm i node-fetch@2  | Install Node-Fetch Vers.2, a lightweight module that brings Fetch API to Node.js. |
-| $ npm i request  | (Deprecated!) Fetch is CLIENT-SIDE, to load APIs on server-side we need packages like this => AXIOS :) |
+|(...)| 1) Use Trick 17 to be in the right path = Right click of your desired file in your explorer > "OPEN IN INTEGRATED TERMINAL" > 2) Initialize Angular to the project with the NAME you want, for this example we use "my-first-project", the step next step will do this:|
+|$ ng new my-first-project| Initializes your Project with a PRE DEFINED WORKSPACE  |
+| (...)| 3) y to accept routing for multiple subpages > 4) Choose Design language (like SCSS) > Installing small libraries (packages) > 5) Puts in all the packages to your "my-first-project"-folder (Component Architecture)|
 
+
+<br />
+<br />
+
+***
+## &nbsp;TERMINAL COMMANDS I USED HERE (FOR CUSTOM WORKSPACE) 🔧
+***
+
+* Create new Angular workspace
+* Learn how to use Angular schematics
+* Create application in the workspace
+* Run the application (and options)
+* Build the application (and options)
+* Test the application (and options)
+* Analyze the application
+* Explore workspace configuration
+* Add Prettier support
+* Remove default placeholder content
+* Add Angular Material component framework
+
+| COMMAND | EFFECT  | 
+|:--------------| :--------------|
+| $ ng new my-first-project --create-application false --style scss | Initializes your Project with a CUSTOM WORKSPACE |
 
 <br />
 <br />

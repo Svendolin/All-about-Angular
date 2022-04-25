@@ -45,6 +45,9 @@ Vorgehen zum Erstellen / Einrichten:
 - Angular Material.io = Mit Components: Wie Bootstrap aber Angular spezifisch. (ABer behavoiur and design, combination of Template, style and logic)
 - Bootstrap ist nur Statisch
 
+Link dazu: 
+https://tomastrajan.medium.com/how-to-build-epic-angular-app-with-clean-architecture-91640ed1656
+
 1)  $ ng new (NAME) = Erstellen (dadurch wird der ganze Teil unten )
 1.1)  $ ng new (NAME) --create-application false --style scss -- --routing = (Version, wo man alles nachher selber einstellen muss)
 2)  $ ng g application customer-admin-map --style scss --routing = Applikationen aufbauen (packages) mit dem Namen "customer admin map"
