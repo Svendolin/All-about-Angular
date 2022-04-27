@@ -94,24 +94,24 @@ Dazwischen adden wir stuff wie im Beschrieb
 13) format:test und format:write in package.json und am Ende wie wieder 4.3) laufenlassen mit $ npm run(NAME)
 
 
-
-
-
-
-
 <button (click)="buttonClicked()">Click me!</button> <!-- Angular = (click) / Javascript = onclick -->
-
-
-
-
-
-
 
 
 buttonClicked() {
     alert('Hello World! :D');
   }
 
+
+
+27.04.22:
+
+npm ci = Bringt die optimale node_modules Struktur für einen allrounder working process (Install Application)
+
+AM besten 2 terminals offen haben. Einer runnt die application with NPM Start / Der andere ist zum Programmieren / Terminal schreiben da
+
+PDF 26 und 27: Summary  / 32: ===0 Um leere Felder nicht als Tag darzustellen (Parent sends data to the child)
+
+Todo: Excercise-Basic-Angular
 
 
 
