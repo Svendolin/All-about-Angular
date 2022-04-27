@@ -157,17 +157,16 @@ _**What's the MEANING OF THE DEFAULT PACKAGING FOLDERS in ANGULAR?**_
 |$ npm install -g typescript| Command to Install Typescript|
 |$ ng --version | Checks the NG Version (Angular Version) |
 |$ ng update | Shows which packages you could update to run the latest versions |
-|$ ng update @angular/cli | Updates the CLI-packages |
+|$ ng update @angular/cli | BUT: First: Uninstall > Then: $npm cache verify command > Then: $npm install -g @angular/cli --- Updates the CLI-packages |
 |$ ng update @angular/core | Updates the core-packages |
 |tsc script.ts|TSC = Typescriptcompilation = Compiles the Typescript File script.ts to Javascript in script.js (only JS is readable for a browser)|
 |(...move on...)| 1) Use Trick 17 to be in the right path = Right click of your desired file in your explorer > "OPEN IN INTEGRATED TERMINAL" > 2) Initialize Angular to the project with the NAME you want, for this example we use "my-first-project", the step next step will do this:|
 |$ ng new my-first-project| Initializes your Project with a PRE DEFINED WORKSPACE  |
-| (...move on...)| 3) y to accept routing for multiple subpages > 4) Choose Design language (like SCSS) > Installing small libraries (packages) > 5) Puts in all the packages to your "my-first-project"-folder (Component Architecture)|
+| (...move on...)| 3) y to accept routing for multiple subpages > 4) Choose Design language (like SCSS) > Installing small libraries (packages) > 5) Puts in all the packages to your "my-first-project"-folder (Component Architecture) > 6) OPEN in integrated folder (in this example at "my-first-project")|
 |$ ng serve --open| Starts our project and opens at default port: localhost:4200 - The Content you see in your browser is from app component - ctrl + S to safe will activate auto load |
 |(...move on...)| Open a NEW TERMINAL in the same folder, so it can run independetly and now add some MORE COMPONENTS (which work like INCLUDES in PHP)|
-|$ ng g c header| Generates a new Angular component called "header" |
-
-|||
+|$ ng g c header| Generates a new Angular component called "header" in the src > app-folder |
+| ctrl + c | Stop Localhost|
 
 
 <br />

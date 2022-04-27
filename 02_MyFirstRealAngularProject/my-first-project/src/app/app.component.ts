@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'my-first-project';
 
+
   buttonClicked() {
     alert('Hello World! :D');
   }
@@ -15,12 +16,4 @@ export class AppComponent {
 
 
 
-
-
-
-
-
-
 }
-
-

@@ -92,3 +92,31 @@ Dazwischen adden wir stuff wie im Beschrieb
 
 12) Autoformatter installieren = $ npm i -D prettier = So wird ALT + SHIFT + F auch funktionieren
 13) format:test und format:write in package.json und am Ende wie wieder 4.3) laufenlassen mit $ npm run(NAME)
+
+
+
+
+
+
+
+<button (click)="buttonClicked()">Click me!</button> <!-- Angular = (click) / Javascript = onclick -->
+
+
+
+
+
+
+
+
+buttonClicked() {
+    alert('Hello World! :D');
+  }
+
+
+
+
+
+
+
+
+
