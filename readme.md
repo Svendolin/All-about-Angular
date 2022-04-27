@@ -89,27 +89,7 @@ _**WHY SHALL I USE ANGULAR?**_
 - Provides a variety of libraries (code libraries) -> **Material Design** for graphical components
 - Built and used by Google = support is guaranteed
 
-
-
-```js
-/* ---- ALWAYS USE CONST and LET to guarantee to work with BLOCK-SCOPE ---- */
-
-<script>
-function foo() {
-  if(true)  {// FUNCTION SCOPE - START | BLOCK SCOPE - START
-    var heroOne = 'Iron Man'; // Functionscope
-    let heroTwo = 'Superman'; // Blockscope (console.log is in the wrong scope)
-    const heroThree = 'Batman';// Blockscope (console.log is in the wrong scope)
-  }                           // BLOCK SCOPE - END
-  console.log(heroOne); // 'Iron Man'
-  console.log(heroTwo); // 'heroTwo is not defined'
-  console.log(heroThree); // 'heroThree is not defined'
-
-}// FUNCTION SCOPE - END
-
-foo();
-</script>
-```
+<br />
 
 _**WHY DO WE USE TYPESCRIPT?**_
 
@@ -118,22 +98,48 @@ _**WHY DO WE USE TYPESCRIPT?**_
 - Old web browsers may not be able to read the constantly updated Javascript codes. Typescript remains at a rustic level, but at the same time we also write modernised Javascript
 
 <br />
+
+_**What's the difference between NULL and UNDEFINED?**_ (Table in GERMAN)
+
+| NULL | UNDEFINED | 
+|:--------------| :--------------|
+|Bedeutung: Zuweisungswert = KEIN WERT! (var = no value) | Bedeutung: Variable wurde DEKLARIERT, aber noch nicht DEFINIERT / ZUGEWIESEN|
+|In Javascript: Werte werden niemals auf null gesetzt | In Javascript: Als Standardwert festgelegt|
+|In JSON: Gültiger Wert | In JSON: Ungültiger Wert |
+|Element: Grundelement|Element: Grundelement|
+|Typ: Objekt (Fehlen dessen Wertes) |Typ: Undefined (Globale Variable)|
+|Prüfen: variable === null // true or false | Prüfen: variablenwert === undefined // true or false
+
 <br />
 
-_**What's the MEANING OF THE FOLDERS in ANGULAR?**_
+_**What's the MEANING OF THE DEFAULT PACKAGING FOLDERS in ANGULAR?**_
 
-* _node_modules_ = Libraries used for our Angular Project
-* _src_ = Source for all the code we're typing over there
+* _node_modules_ = All additional external Libraries used for our Angular Project (Lots of default libraries)
+* _src_ = Source for all the code we're typing over there (more folders will be added through the work)
   * _app_ = Components for the page (With Import and Export we generate dependencies and add only the content we need)
+    * _app-routing.module.ts_ = All the URL of our page to call these later (Like /login or /register)
+    * _app.component.html_ = HTML Code
+    * _app.component.scss_ = SCSS Code
+    * _app.component.ts_ = TTypescript / Javascript Code
+    * _app.module.ts_ = Declared Components (out of our app-folder) and imported modules
   * _assets_ = Safe images, videos and sounds
-  * _environment_ = API keys, infos to our webapp like server URL changes
-  * _index.html_ = Starting the process
-  * _main.ts_ = Configurations (Imports the first module)
-* _.browserlistrc_ = Webbrowser Output Support
+  * _environment_ = Keep informations which may change: API keys, infos to our webapp like server URL changes
+  * _index.html_ = FIRST OPENING FILE and binds the ``<body>``-part from app.component.html
+  * _main.ts_ = Configurations (Imports the first module, the AppModule) - Dont have to be changed!
+  * _polyfills.ts_ = Compability - Dont have to be changed!
+  * _styles.scss_ = Basic styles for our application (INSERT CSS CODE HERE)
+  * _test.ts_ = Configurations for TESTING our application - Dont have to be changed!
+* _.browserlistrc_ = List of Webbrowser Output Support to show HTML, CSS and JS
 * _.editorcofig_ = Configuration of our Code Editor VSC
-* _.gitignore_ = All the data which isnt shown in .git
-* _angular.json_ = Angular Configuration
-* _karma.conf.js_ = Testrunner (To test our Webapp)
+* _.gitignore_ = All the data which shouldn't shown in .git
+* _angular.json_ = Angular Project Configuration
+* _karma.conf.js_ = Testrunner (To automatically test our Webapp)
+* _package-lock.json_ = Overview of installed Libraries and Versions
+* _package.json_ = Overview of the Package-libraries which have to be installed into node_modules
+* _README.md_ = Basic instructions to initialize a project
+* _tsconfig.json_ = Here to define which Javascript version we would like to convert our Typescript and typescript tests
+
+<br />
 
 (**IMPORTANT: src is the most used folder here, in general you keep the others unattached**)
 
@@ -149,10 +155,19 @@ _**What's the MEANING OF THE FOLDERS in ANGULAR?**_
 | $ npm --version | Checks the NPM Version (Node Package Manager) |
 |$ npm install -g @angular/cli|Command to Install Angular CLI (Command Line Interface)|
 |$ npm install -g typescript| Command to Install Typescript|
+|$ ng --version | Checks the NG Version (Angular Version) |
+|$ ng update | Shows which packages you could update to run the latest versions |
+|$ ng update @angular/cli | Updates the CLI-packages |
+|$ ng update @angular/core | Updates the core-packages |
 |tsc script.ts|TSC = Typescriptcompilation = Compiles the Typescript File script.ts to Javascript in script.js (only JS is readable for a browser)|
-|(...)| 1) Use Trick 17 to be in the right path = Right click of your desired file in your explorer > "OPEN IN INTEGRATED TERMINAL" > 2) Initialize Angular to the project with the NAME you want, for this example we use "my-first-project", the step next step will do this:|
+|(...move on...)| 1) Use Trick 17 to be in the right path = Right click of your desired file in your explorer > "OPEN IN INTEGRATED TERMINAL" > 2) Initialize Angular to the project with the NAME you want, for this example we use "my-first-project", the step next step will do this:|
 |$ ng new my-first-project| Initializes your Project with a PRE DEFINED WORKSPACE  |
-| (...)| 3) y to accept routing for multiple subpages > 4) Choose Design language (like SCSS) > Installing small libraries (packages) > 5) Puts in all the packages to your "my-first-project"-folder (Component Architecture)|
+| (...move on...)| 3) y to accept routing for multiple subpages > 4) Choose Design language (like SCSS) > Installing small libraries (packages) > 5) Puts in all the packages to your "my-first-project"-folder (Component Architecture)|
+|$ ng serve --open| Starts our project and opens at default port: localhost:4200 - The Content you see in your browser is from app component - ctrl + S to safe will activate auto load |
+|(...move on...)| Open a NEW TERMINAL in the same folder, so it can run independetly and now add some MORE COMPONENTS (which work like INCLUDES in PHP)|
+|$ ng g c header| Generates a new Angular component called "header" |
+
+|||
 
 
 <br />
@@ -181,6 +196,33 @@ _**What's the MEANING OF THE FOLDERS in ANGULAR?**_
 <br />
 <br />
 
+***
+## Coding tips and tricks ✅
+***
+
+_**CONST vs LET vs VAR:**_
+```js
+/* ---- ALWAYS USE CONST and LET to guarantee to work with BLOCK-SCOPE ---- */
+
+<script>
+function foo() {
+  if(true)  {// FUNCTION SCOPE - START | BLOCK SCOPE - START
+    var heroOne = 'Iron Man'; // Functionscope
+    let heroTwo = 'Superman'; // Blockscope (console.log is in the wrong scope)
+    const heroThree = 'Batman';// Blockscope (console.log is in the wrong scope)
+  }                           // BLOCK SCOPE - END
+  console.log(heroOne); // 'Iron Man'
+  console.log(heroTwo); // 'heroTwo is not defined'
+  console.log(heroThree); // 'heroThree is not defined'
+
+}// FUNCTION SCOPE - END
+
+foo();
+</script>
+```
+
+<br />
+<br />
 
 ***
 ## Collaboration ✅
