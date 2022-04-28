@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+/* Allgemeines CSS, was überall gilt */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.05);
+  font-family: 'Lato', sans-serif;
+}

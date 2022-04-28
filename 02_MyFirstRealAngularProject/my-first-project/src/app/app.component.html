@@ -1,1 +1,18 @@
-<button (click)="buttonClicked()">Click me!</button> <!-- Angular = (click) / Javascript = onclick -->
+<!-- HTML unserer Hamster-Seite -->
+
+<!--
+   - Dieser Tag verweist auf header.component.html - Er beinhaltet alles, was dort geschrieben wurde
+   - Der Name holen wir stets aus dem zugehörigen components.ts file > @component > selector
+-->
+
+<app-header></app-header>
+
+<div class="container">
+  <app-hamster-card [text]="postTexts[0]"></app-hamster-card> <!-- ''= Value of JS-Variables ""= HTML Part -->
+  <app-hamster-card [text]="postTexts[1]"></app-hamster-card> <!-- That postTexts Variable comes from app.components.ts -->
+  <app-hamster-card></app-hamster-card>
+  <app-hamster-card></app-hamster-card>
+</div>
+
+<button (click)="buttonClicked()">Click me!</button>
+<!-- Angular = (click) / Javascript = onclick -->

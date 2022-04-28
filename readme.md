@@ -20,7 +20,9 @@ This "All about Angular"-repository catches up its focus on all the Projects and
 
 * ANGULAR EXERCISES from Tomas are you going to find [HERE](https://github.com/tomastrajan/angular-mastery-workshop)
 
-* Presentation: https://drive.google.com/file/d/12sQ0uXbHAKkHme4WY_dY3vY6y9888t66/view?usp=sharing
+* Presentation Nr.1 is able to watch with a [CLICK OVER HERE](https://drive.google.com/file/d/12sQ0uXbHAKkHme4WY_dY3vY6y9888t66/view?usp=sharing)
+
+* Presentation Nr.2 is able to watch with a [CLICK OVER HERE](https://drive.google.com/file/d/1Qlk3vvLGEG_RhMD50MvQyAC0Xd-bhcQa/view?usp=sharing)
 
 <br />
 <br />

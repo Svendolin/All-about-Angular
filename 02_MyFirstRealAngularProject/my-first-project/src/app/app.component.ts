@@ -6,7 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'my-first-project';
+  // Variable Text for our Appplication:
+  postTexts = [
+    'Hello Hamster World',
+    'Hello everyone!'
+]
 
 
   buttonClicked() {
