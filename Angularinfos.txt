@@ -113,6 +113,10 @@ PDF 26 und 27: Summary  / 32: ===0 Um leere Felder nicht als Tag darzustellen (P
 
 Todo: Excercise-Basic-Angular
 
+28.04.
+MDN = Your friend for everything
+To be able to use material design, use / install =
+
 
 
 
