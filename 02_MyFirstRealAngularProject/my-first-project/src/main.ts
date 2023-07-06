@@ -8,5 +8,9 @@ if (environment.production) {
   enableProdMode();
 }
 
+/* AppModule is the root module of the application
+and is started and "binded" in the main.ts file by default.
+*/
+
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
