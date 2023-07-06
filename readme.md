@@ -46,24 +46,25 @@ This "All about Angular"-repository catches up its focus on all the Projects and
 ***
 
 
-**Node.js - INSTALLATION:** *(Used for runtime environment for Javascript, script performs directly on the computer and not just on a web browser)*
+**1) Node.js - INSTALLATION:** *(Used for runtime environment for Javascript, script performs directly on the computer and not just on a web browser)*
 * https://nodejs.org/en/ (Recommend LTS = Long Term Support for an unbuggy / non-risky experience)
 * Open BASH or CMD or POWERSHELL to check with node --version if you installed it correctly
 * Node works via the command lines and is not executed via graphical components.
 * Together with NODE we also get the tool "Node Package Manager" = software can be installed via the command line!
 <br />
 
-**Angular - INSTALLATION:** *(Our CLI: Command Line Interface)*
+**2) Angular - INSTALLATION:** *(Our CLI: Command Line Interface - A CLI is needed to generate new components)*
 * https://angular.io/cli (npm install -g @angular/clie)
 <br />
 
-**VSC and CHROME** *(Code Editor and Webbrowser)*
+**3) VSC and CHROME** *(Code Editor and Webbrowser)*
 * Chrome is recomended because of the close origin of Angular by Google
+* Other options are codesandbox.io or stackblitz.com to work with Angular directly in the browser. But Visual Studio Code is the best option because of the many extensions and the possibility to work with GIT.
 <br />
 
 
 
-NODEMON - INSTALLATION:
+OPT) NODEMON - INSTALLATION:
 * https://www.npmjs.com/package/nodemon 
 * (Nodemon is a tool that helps develop node.js based applications by automatically restarting the node application when file changes in the directory are detected).
 <br />
@@ -85,11 +86,12 @@ NODEMON - INSTALLATION:
 
 _**WHY SHALL I USE ANGULAR?**_
 
-- Provides components to effectively connect to the server or increase compatibility
-- Scripts are already available (safe time) and here to simplify the programming process
+- Provides **components** to effectively connect to the server or increase compatibility
+- **Scripts** are already available (safe time) and here to simplify the programming process
 - Other well-known Javascript frameworks are React and View
-- Provides a variety of libraries (code libraries) -> **Material Design** for graphical components
+- Provides a variety of **libraries** (code libraries) -> **Material Design** for graphical components
 - Built and used by Google = support is guaranteed
+- **Patterns** are used to simplify the programming process, it is performant and scalable
 
 <br />
 
@@ -117,7 +119,7 @@ _**What's the difference between NULL and UNDEFINED?**_ (Table in GERMAN)
 _**What's the MEANING OF THE DEFAULT PACKAGING FOLDERS in ANGULAR?**_
 
 * _node_modules_ = All additional external Libraries used for our Angular Project (Lots of default libraries)
-* _src_ = Source for all the code we're typing over there (more folders will be added through the work)
+* **_src_ = IMPORTANT: Source for all the code we're typing over there (more folders will be added through the work)**
   * _app_ = Components for the page (With Import and Export we generate dependencies and add only the content we need)
     * _app-routing.module.ts_ = All the URL of our page to call these later (Like /login or /register)
     * _app.component.html_ = HTML Code
@@ -145,30 +147,57 @@ _**What's the MEANING OF THE DEFAULT PACKAGING FOLDERS in ANGULAR?**_
 
 (**IMPORTANT: src is the most used folder here, in general you keep the others unattached**)
 
+<br />
+<br />
+
+<img align="left" alt="Angular" width="35px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/angular/angular.png" /> 
 
 
+## &nbsp;Angular Component Architecture ✅
 ***
-## &nbsp;TERMINAL COMMANDS I USED HERE (FOR PRE-DEFINED WORKSPACE) ✅
+``Components`` = Components are the most basic building block of an UI in an Angular Application. An Angular application is a tree of Angular Components. Angular Components are defined by ``@Component`` decorator and a class. The class contains properties and methods, which are defined in the component's template. The template is a HTML view where you can display data by binding controls to properties of the component. You will call them like "HeaderComponent" or "FooterComponent" and they are reusable.
+
+**BE SURE to CHECK OUT 00_ImagesForHelp to get a better understanding!**
+
+
+<img align="center" alt="Image" src="https://www.ngdevelop.tech/wp-content/uploads/2017/12/Angular_Architecture.png" /> 
+
+<br />
+<br />
+
+
+## &nbsp;1) SETTING UP your project: These TERMINAL COMMANDS are important... ✅
 ***
 
-| COMMAND | EFFECT  | 
-|:--------------| :--------------|
-| $ node --version | Checks the node.js version (None if you havent installed it) |
-| $ npm --version | Checks the NPM Version (Node Package Manager) |
-|$ npm install -g @angular/cli|Command to Install Angular CLI (Command Line Interface)|
-|$ npm install -g typescript| Command to Install Typescript|
-|$ ng --version | Checks the NG Version (Angular Version) |
-|$ ng update | Shows which packages you could update to run the latest versions |
-|$ ng update @angular/cli | BUT: First: Uninstall > Then: $npm cache verify command > Then: $npm install -g @angular/cli --- Updates the CLI-packages |
-|$ ng update @angular/core | Updates the core-packages |
-|tsc script.ts|TSC = Typescriptcompilation = Compiles the Typescript File script.ts to Javascript in script.js (only JS is readable for a browser)|
-|(...move on...)| 1) Use Trick 17 to be in the right path = Right click of your desired file in your explorer > "OPEN IN INTEGRATED TERMINAL" > 2) Initialize Angular to the project with the NAME you want, for this example we use "my-first-project", the step next step will do this:|
-|$ ng new my-first-project| Initializes your Project with a PRE DEFINED WORKSPACE  |
-| (...move on...)| 3) y to accept routing for multiple subpages > 4) Choose Design language (like SCSS) > Installing small libraries (packages) > 5) Puts in all the packages to your "my-first-project"-folder (Component Architecture) > 6) OPEN in integrated folder (in this example at "my-first-project")|
-|$ ng serve --open| Starts our project and opens at default port: localhost:4200 - The Content you see in your browser is from app component - ctrl + S to safe will activate auto load |
-|(...move on...)| Open a NEW TERMINAL in the same folder, so it can run independetly and now add some MORE COMPONENTS (which work like INCLUDES in PHP)|
-|$ ng g c header| Generates a new Angular component called "header" in the src > app-folder |
-| ctrl + c | Stop Localhost|
+|STEP| COMMAND | EFFECT  | 
+|:--------------| :--------------| :--------------|
+|1| $ node --version | Checks the node.js version (None if you havent installed it) |
+|2| $ npm --version | Checks the NPM Version (Node Package Manager) |
+|3|$ npm install -g @angular/cli|Command to Install Angular CLI (Command Line Interface)|
+|4|$ npm install -g typescript| Command to Install Typescript|
+|5|$ ng --version | Checks the NG Version (Angular Version) |
+|6|$ ng update | Shows which packages you could update to run the latest versions |
+|7|$ ng update @angular/cli | BUT: First: Uninstall > Then: $npm cache verify command > Then: $npm install -g @angular/cli --- Updates the CLI-packages |
+|8|$ ng update @angular/core | Updates the core-packages |
+|9|tsc script.ts|TSC = Typescriptcompilation = Compiles the Typescript File script.ts to Javascript in script.js (only JS is readable for a browser)|
+|10|(...move on...)| 1) Use Trick 17 to be in the right path = Right click of your desired file in your explorer > "OPEN IN INTEGRATED TERMINAL" > 2) Initialize Angular to the project with the NAME you want, for this example we use "my-first-project", the step next step will do this:|
+|11|$ ng new my-first-project| Initializes your Project with a PRE DEFINED WORKSPACE  |
+|12| (...move on...)| 3) y to accept routing for multiple subpages > 4) Choose Design language (like SCSS) > Installing small libraries (packages) > 5) Puts in all the packages to your "my-first-project"-folder (Component Architecture) > 6) OPEN in integrated folder (in this example at "my-first-project")|
+
+
+
+<br>
+
+## &nbsp;2) STARTING and RUNNING your project: These TERMINAL COMMANDS are important... ✅
+***
+
+|STEP| COMMAND | EFFECT  | 
+|:--------------| :--------------| :--------------|
+|0|Folder Check| Be sure to open up in the correct integrated terminal to continue the process|
+|1|$ ng serve --open| Starts our project and opens at default port: localhost:4200 - The Content you see in your browser is from app component - ctrl + S to safe will activate auto load (If you only write "ng serve" you have to open it manually by clicking the localhost link in the terminal) |
+|2|(...move on...)| Open a NEW TERMINAL in the same folder, so it can run independetly and now add some MORE COMPONENTS (which work like INCLUDES in PHP)|
+|3|$ ng g c header| Generates a new Angular component called "header" in the src > app-folder |
+|4| ctrl + c | Stop Localhost|
 
 
 <br />
