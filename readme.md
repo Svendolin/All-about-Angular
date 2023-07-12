@@ -35,7 +35,7 @@ This "All about Angular"-repository catches up its focus on all the Projects and
 | Topic | Content  | 
 |:--------------| :--------------|
 | 01_Typescript |  Basic Usage of Typescript |
-| 02_Angularproject |  my-first-project: Pandoragram |
+| 02_Angularproject |  my-first-project: Hamsterbook |
 
 
 <br />
@@ -149,11 +149,10 @@ _**What's the MEANING OF THE DEFAULT PACKAGING FOLDERS in ANGULAR?**_
 
 <br />
 <br />
+ 
 
-<img align="left" alt="Angular" width="35px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/angular/angular.png" /> 
 
-
-## &nbsp;Angular Component Architecture ✅
+## <img align="left" alt="Angular" width="35px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/angular/angular.png" /> &nbsp; A) Angular Component Architecture ✅
 ***
 ``Components`` = Components are the most basic building block of an UI in an Angular Application. An Angular application is a tree of Angular Components. Angular Components are defined by ``@Component`` decorator and a class. The class contains properties and methods, which are defined in the component's template. The template is a HTML view where you can display data by binding controls to properties of the component. You will call them like "HeaderComponent" or "FooterComponent" and they are reusable.
 
@@ -165,7 +164,100 @@ _**What's the MEANING OF THE DEFAULT PACKAGING FOLDERS in ANGULAR?**_
 <br />
 <br />
 
+## <img align="left" alt="Angular" width="35px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/angular/angular.png" /> &nbsp; B) Input & Output Parameters ✅
+***
+``Input and Output Parameters`` = We want to display different content elements and not, for example, the same element 10 times. For this we use input and output parameters. Input parameters are the data we put into our component and output parameters are the data we get out of our component. We can put variables in and out of our component:
 
+1. Add the Add the {{ text }} variable to output:
+```html
+<!-- (!) In AUSGELAGERTES: hamster-card.component.html -->
+<div class="card">
+  <img src="assets/img/hamster/1.jpg" alt="">
+  <!-- 1. Add the {{ text }} variable to output it over here -->
+  <p> {{ text }} </p>
+
+  <button>Like</button>
+  <button>Message</button>
+</div>
+```
+2. Then define the content of this {{ text }} variable within the .TS Typescript component:
+```typescript
+// (!) In AUSGELAGERTES: hamster-card.components.ts
+export class HamsterCardComponent implements OnInit {
+  // 2. Add the input and constructor, our datatype is string ()
+  @Input() text: string = '';  
+  constructor() { }
+
+  ngOnInit(): void {
+
+  }
+}
+```
+3. Pack the text into a variable and pass it to the component in the typescript:
+```html
+<!-- (!) In der URSPRUNGS-App-Component: app.component.html -->
+<app-header></app-header>
+
+<div class="container">
+  <app-hamster-card [text]="postTexts[0]"></app-hamster-card> <!-- Define the variable here -->
+  <app-hamster-card [text]="postTexts[1]"></app-hamster-card> <!-- Define the variable here -->
+</div>
+
+```
+4. In the app.component.ts, give the variable a value, in our case in the form of text as an array:
+```typescript
+// (!) In der URSPRUNGS-App-Component: app.component.ts
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
+})
+export class AppComponent {
+  // Add the textcontent here as a array:
+  postTexts = [
+    'Hello Hamster World',
+    'Hello everyone!'
+  ]
+
+}
+
+// Ausgelagert: (Damit ist die dafür neu erstellte Komponente gemeint)
+```
+<br />
+<br />
+
+## <img align="left" alt="Angular" width="35px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/angular/angular.png" /> &nbsp; C) NgFor loop ✅
+
+``NgFor`` = ngFor is a structural directive, meaning that it changes the structure of the DOM. Angular uses this directive to create a list of elements and to repeat through the list. The ngFor directive iterates over the array.
+
+1. BEFORE:
+```html
+<!-- (!) In der URSPRUNGS-App-Component: app.component.html -->
+<div class="container">
+  <app-hamster-card [img]="postImages[0]" [text]="postTexts[0]"></app-hamster-card>
+  <app-hamster-card [img]="postImages[1]" [text]="postTexts[1]"></app-hamster-card> 
+  <app-hamster-card [img]="postImages[2]" [text]="postTexts[2]"></app-hamster-card>
+  <app-hamster-card [img]="postImages[3]" [text]="postTexts[3]"></app-hamster-card>
+</div>
+
+```
+2. AFTER:
+<!-- 
+Pefectly shown in the example of proposals.components.html (URSPRUNG),
+in connection with profile-row.components.html (AUSGELAGERT) -->
+```html
+<div class="container">
+  <app-hamster-card *ngFor="let i of [0,1,2,3]" [img]="postImages[i]" [text]="postTexts[i]"></app-hamster-card>
+</div>
+
+```
+
+
+
+<br />
+<br />
 ## &nbsp;1) SETTING UP your project: These TERMINAL COMMANDS are important... ✅
 ***
 
