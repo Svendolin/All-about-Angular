@@ -14,6 +14,24 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+/*
+Overall Classes which will be integrated everywhere
+as long as it has been called in a components.html file =>
+So it can be used in many different components!
+*/
+
+.padding-16 {
+  padding: 16px;
+}
+
 .margin-bottom-16 {
   margin-bottom: 16px;
+}
+
+.standard-card {
+  background-color: white;
+  width: 400px;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 4px;
+  margin-bottom: 32px;
 }

@@ -16,4 +16,19 @@
     color: rgba(0, 0, 0, 0.5);
     font-size: 14px;
   }
+
+  .name {
+    width: 150px;
+  }
+
+  a {
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(55, 55, 168);
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
