@@ -35,7 +35,7 @@ This "All about Angular"-repository catches up its focus on all the Projects and
 | Topic | Content  | 
 |:--------------| :--------------|
 | 01_Typescript |  Basic Usage of Typescript |
-| 02_Angularproject |  My very first angular project |
+| 02_Angularproject |  my-first-project: Pandoragram |
 
 
 <br />
@@ -119,14 +119,14 @@ _**What's the difference between NULL and UNDEFINED?**_ (Table in GERMAN)
 _**What's the MEANING OF THE DEFAULT PACKAGING FOLDERS in ANGULAR?**_
 
 * _node_modules_ = All additional external Libraries used for our Angular Project (Lots of default libraries)
-* **_src_ = IMPORTANT: Source for all the code we're typing over there (more folders will be added through the work)**
-  * _app_ = Components for the page (With Import and Export we generate dependencies and add only the content we need)
+* **_src_ = IMPORTANT: Source for all the code we're typing over there (more folders will be added through the work) into the app folder**
+  * _app_ = **Components for the page (With Import and Export we generate dependencies and add only the content we need)**
     * _app-routing.module.ts_ = All the URL of our page to call these later (Like /login or /register)
     * _app.component.html_ = HTML Code
     * _app.component.scss_ = SCSS Code
     * _app.component.ts_ = TTypescript / Javascript Code
     * _app.module.ts_ = Declared Components (out of our app-folder) and imported modules
-  * _assets_ = Safe images, videos and sounds
+  * _assets_ = **IMPORTANT: Safe images, videos and sounds** 
   * _environment_ = Keep informations which may change: API keys, infos to our webapp like server URL changes
   * _index.html_ = FIRST OPENING FILE and binds the ``<body>``-part from app.component.html
   * _main.ts_ = Configurations (Imports the first module, the AppModule) - Dont have to be changed!
@@ -184,8 +184,6 @@ _**What's the MEANING OF THE DEFAULT PACKAGING FOLDERS in ANGULAR?**_
 |11|$ ng new my-first-project| Initializes your Project with a PRE DEFINED WORKSPACE  |
 |12| (...move on...)| 3) y to accept routing for multiple subpages > 4) Choose Design language (like SCSS) > Installing small libraries (packages) > 5) Puts in all the packages to your "my-first-project"-folder (Component Architecture) > 6) OPEN in integrated folder (in this example at "my-first-project")|
 
-
-
 <br>
 
 ## &nbsp;2) STARTING and RUNNING your project: These TERMINAL COMMANDS are important... ✅
@@ -196,8 +194,17 @@ _**What's the MEANING OF THE DEFAULT PACKAGING FOLDERS in ANGULAR?**_
 |0|Folder Check| Be sure to open up in the correct integrated terminal to continue the process|
 |1|$ ng serve --open| Starts our project and opens at default port: localhost:4200 - The Content you see in your browser is from app component - ctrl + S to safe will activate auto load (If you only write "ng serve" you have to open it manually by clicking the localhost link in the terminal) |
 |2|(...move on...)| Open a NEW TERMINAL in the same folder, so it can run independetly and now add some MORE COMPONENTS (which work like INCLUDES in PHP)|
-|3|$ ng g c header| Generates a new Angular component called "header" in the src > app-folder |
-|4| ctrl + c | Stop Localhost|
+|2.1| ctrl + c | OPTIONAL: Stop localhost for a brake|
+
+<br>
+
+
+## &nbsp;3) WORKING WITH COMPONENTS... ✅
+***
+|STEP| COMMAND | EFFECT  | 
+|:--------------| :--------------| :--------------|
+|1|$ ng g c header| Generates a new Angular component called "header" in the src > app-folder with multiple files like .html .css .ts and testfile called spec.ts 
+
 
 
 <br />
