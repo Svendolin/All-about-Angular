@@ -5,10 +5,10 @@
 
 <!-- CARDS - Refers to src/app/hamster-card -->
 <div class="container">
-  <app-hamster-card [text]="postTexts[0]"></app-hamster-card> <!-- ''= Value of JS-Variables ""= HTML Part -->
-  <app-hamster-card [text]="postTexts[1]"></app-hamster-card> <!-- That postTexts Variable comes from app.components.ts -->
-  <app-hamster-card></app-hamster-card>
-  <app-hamster-card></app-hamster-card>
+  <app-hamster-card [img]="postImages[0]" [text]="postTexts[0]"></app-hamster-card> <!-- ''= Value of JS-Variables ""= HTML Part -->
+  <app-hamster-card [img]="postImages[1]" [text]="postTexts[1]"></app-hamster-card> <!-- That postTexts Variable comes from app.components.ts -->
+  <app-hamster-card [img]="postImages[2]" [text]="postTexts[2]"></app-hamster-card>
+  <app-hamster-card [img]="postImages[3]" [text]="postTexts[3]"></app-hamster-card>
 </div>
 
 <button (click)="buttonClicked()">Click me!</button>

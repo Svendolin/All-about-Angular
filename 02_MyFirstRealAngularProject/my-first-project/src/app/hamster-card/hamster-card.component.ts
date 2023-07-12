@@ -12,9 +12,12 @@ If thats not the case, then we have to add it manually in these {} brackets.
   templateUrl: './hamster-card.component.html',
   styleUrls: ['./hamster-card.component.scss']
 })
+
+// ADD ypour variables here:
 export class HamsterCardComponent implements OnInit {
   // text-variable which we define over here to set them into the hamster-card.component.html
   @Input() text: string = '';   // :string = Datatype definition for a variable specially made for Typescript
+  @Input() img: string = '';
 
   constructor() { }
 
