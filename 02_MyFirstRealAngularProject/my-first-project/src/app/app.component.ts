@@ -17,7 +17,4 @@ export class AppComponent {
     alert('Hello World! :D');
   }
 
-
-
-
 }

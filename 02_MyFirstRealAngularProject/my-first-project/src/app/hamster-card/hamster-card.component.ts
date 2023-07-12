@@ -1,6 +1,11 @@
 // import = Content that does not come in Typescript but from the Angular Framework
-
 import { Component, Input, OnInit } from '@angular/core';
+
+/* IMPORTANT:
+Angular should add the "Input"-decorator to the text variable from down below automatically.
+If thats not the case, then we have to add it manually in these {} brackets.
+
+*/
 
 @Component({
   selector: 'app-hamster-card', // IMPORTANT: The selector is the name of the component which we can use in the app.component.html
