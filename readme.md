@@ -251,6 +251,7 @@ in connection with profile-row.components.html (AUSGELAGERT) -->
 <div class="container">
   <app-hamster-card *ngFor="let i of [0,1,2,3]" [img]="postImages[i]" [text]="postTexts[i]"></app-hamster-card>
 </div>
+<!-- As you can see we dont use postImages[1] etc anymore, we iterate into "i" -->
 
 ```
 
@@ -258,6 +259,22 @@ in connection with profile-row.components.html (AUSGELAGERT) -->
 
 <br />
 <br />
+
+
+## <img align="left" alt="Angular" width="35px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/angular/angular.png" /> &nbsp; D) "Service" ✅
+
+``Service`` = Ist eine weitere Datei, in der wir Daten hinzufügen und speichern. So können wir diese in einer anderen Komponente aufrufen. Das Prinzip, was angewendet wird, ist das "Dependency Injection" (DI). Das bedeutet, dass wir eine Instanz von diesem Service haben, der in einer anderen Komponente verwendet werden kann. Wir können also Daten in einem Service speichern und diese in einer anderen Komponente aufrufen.
+
+xxx
+```html
+
+```
+
+
+
+<br />
+<br />
+
 ## &nbsp;1) SETTING UP your project: These TERMINAL COMMANDS are important... ✅
 ***
 
@@ -297,10 +314,24 @@ in connection with profile-row.components.html (AUSGELAGERT) -->
 |:--------------| :--------------| :--------------|
 |1|$ ng g c header| Generates a new Angular component called "header" in the src > app-folder with multiple files like .html .css .ts and testfile called spec.ts 
 
+<br>
 
+## &nbsp;4) WORKING WITH SERVICES... ✅
+***
+|STEP| COMMAND | EFFECT  | 
+|:--------------| :--------------| :--------------|
+|1|$ ng g s friend| Generates a new Angular service called "friend" below the app.component starting folder! (Services are used to store data and use it in other components) |
 
-<br />
-<br />
+<br>
+
+## &nbsp;5) ADDING LIBRARIES... ✅
+***
+|STEP| COMMAND | EFFECT  | 
+|:--------------| :--------------| :--------------|
+|1|$ ng add @angular/material| Go to their website (like Bootstrap and Angular Material). In the "How to get started" site 
+you will find the starting guide |
+
+<br>
 
 ***
 ## &nbsp;TERMINAL COMMANDS I USED HERE (FOR CUSTOM WORKSPACE) 🔧
