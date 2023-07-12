@@ -3,7 +3,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-hamster-card',
+  selector: 'app-hamster-card', // IMPORTANT: The selector is the name of the component which we can use in the app.component.html
   templateUrl: './hamster-card.component.html',
   styleUrls: ['./hamster-card.component.scss']
 })
